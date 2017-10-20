@@ -1,0 +1,37 @@
+{
+  "name": "cellular-automata",
+  "version": "0.1.0",
+  "description": "Playground for One-dimentional Cellular Automata",
+  "dependencies": {
+    "webpack": "^3.5.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "webpack": "^3.5.4",
+    "webpack-dev-server": "^2.7.1"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tiagox/cellular-automata.git"
+  },
+  "keywords": [
+    "cellular",
+    "automata",
+    "javascript",
+    "canvas",
+    "wolfram",
+    "atlas"
+  ],
+  "author": "Santiago Rojo <tiagox@gmail.com>",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/tiagox/cellular-automata/issues"
+  },
+  "homepage": "https://github.com/tiagox/cellular-automata#readme"
+}
