@@ -2,15 +2,11 @@
   "name": "cellular-automata",
   "version": "0.1.0",
   "description": "Playground for One-dimentional Cellular Automata",
-  "dependencies": {
-    "webpack": "^3.5.4"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.0",
-    "webpack": "^3.5.4",
-    "webpack-dev-server": "^2.7.1"
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   },
   "scripts": {
     "start": "webpack-dev-server --open",

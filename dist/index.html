@@ -1,18 +1,82 @@
 <html>
+
 <head>
   <title>Cellular Automata</title>
   <style type="text/css">
-    body {margin: 0 auto;  /*width: 500px;*/ }
-    #controls {background-color: white; border: 1px solid gray; bottom: 10px; left: 10px; position: absolute;}
-    #rules-number {font-family: sans-serif; font-size: 20px; width: 60px;  height: 60px; padding-left: 13px; border: none; text-align: center;}
+    * {
+      font-family: sans-serif;
+    }
+
+    body {
+      margin: 0 auto;
+    }
+
+    .controls-container {
+      display: flex;
+      background-color: white;
+      border: 1px solid gray;
+      bottom: 10px;
+      left: 10px;
+      position: absolute;
+    }
+
+    .control {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .control.hidden {
+      display: none;
+    }
+
+    input,
+    select {
+      background-color: white;
+      font-size: 20px;
+      width: 60px;
+      height: 40px;
+      padding-left: 13px;
+      border: none;
+      text-align: center;
+    }
+
+    select {
+      width: auto;
+    }
+
+    label {
+      font-size: 0.75em;
+    }
   </style>
 </head>
+
 <body>
-  <div id="controls">
-    <input type="number" name="rules-number" id="rules-number">
+  <div class="controls-container">
+    <div class="control">
+      <input type="number" name="rules-number" id="rules-number">
+      <label for="rules-number">Rule n#</label>
+    </div>
+    <div class="control">
+      <select name="initial-gen-strategy" id="initial-gen-strategy">
+        <option value="random">Random</option>
+        <option value="only-1">Only 1</option>
+        <option value="all-but-1">All but 1</option>
+        <option value="none">None</option>
+        <option value="even">Even</option>
+        <option value="half">Half</option>
+      </select>
+      <label for="initial-gen-strategy">Initial gen</label>
+    </div>
+    <div class="control" id='alive-ratio-control'>
+      <input type="number" name="alive-ratio" id="alive-ratio">
+      <label for="alive-ratio">Alive %</label>
+    </div>
   </div>
   <div id="container"></div>
 
   <script type="text/javascript" src="bundle.js"></script>
 </body>
+
 </html>
