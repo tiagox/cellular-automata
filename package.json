@@ -4,13 +4,11 @@
   "description": "Playground for One-dimentional Cellular Automata",
   "dependencies": {},
   "devDependencies": {
-    "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "parcel": "latest"
   },
   "scripts": {
-    "start": "webpack-dev-server --open",
-    "build": "webpack"
+    "start": "parcel start src/index.html",
+    "build": "parcel build src/index.html"
   },
   "repository": {
     "type": "git",
