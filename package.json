@@ -2,12 +2,8 @@
   "name": "cellular-automata",
   "version": "0.1.0",
   "description": "Playground for One-dimentional Cellular Automata",
-  "dependencies": {},
-  "devDependencies": {
-    "parcel": "latest"
-  },
   "scripts": {
-    "start": "parcel start src/index.html",
+    "start": "parcel serve src/index.html",
     "build": "parcel build src/index.html"
   },
   "repository": {
@@ -27,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/tiagox/cellular-automata/issues"
   },
-  "homepage": "https://github.com/tiagox/cellular-automata#readme"
+  "homepage": "https://github.com/tiagox/cellular-automata#readme",
+  "devDependencies": {
+    "parcel": "^2.16.1"
+  }
 }
