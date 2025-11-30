@@ -152,5 +152,7 @@ function numberToByteArray(number) {
 		// rules = numberToByteArray(rulesNumber.value)
 	}
 
-	requestAnimationFrame(draw)
+	setTimeout(() => {
+		requestAnimationFrame(draw)
+	}, 50)
 })()
